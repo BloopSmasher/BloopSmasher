@@ -1,4 +1,4 @@
 <div align="center">
-  <img src="wave.png" alt="Harsh waving" align="left" />
-  <font size="20"><code>Hey There, Harsh Here</code></font>
+  <img src="wave.png" alt="Harsh waving" align="left" width="600" />
+  <p style="font-size: 1234;><code>Hey There, Harsh Here</code></p>
 </div>
