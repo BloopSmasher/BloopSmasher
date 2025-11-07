@@ -1,7 +1,7 @@
 <div align="center">
 
-<img src="wave.png" alt="Harsh waving" width="400" align="left" />
+<img src="wave.png" alt="Harsh waving" width="600" align="left" />
 
-<h1><code>Hey There, Harsh Here<code></h1>
+<span style="font-size: 48px><code>Hey There, Harsh Here</code></span>
 
 </div>
