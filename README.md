@@ -1,4 +1,4 @@
 <div align="center">
-  <img src="wave.png" alt="Harsh waving" width="600" align="left"/>
+  <img src="profile.png" alt="Harsh waving"/>
   <code>Hey There, Harsh Here</code>
 </div>
