@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="profile.png" alt="Harsh waving"/>
+  <img src="canimate.svg" alt="Harsh waving"/>
 </div>
