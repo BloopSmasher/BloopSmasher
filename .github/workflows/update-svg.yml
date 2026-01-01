@@ -22,7 +22,7 @@ jobs:
         run: |
           DAY=$(date '+%A')
 
-          TEMP=$(curl -s 'wttr.in/Raipur?format=%t' | sed 's/[^0-9\-]//g')
+          TEMP=$(curl -s 'wttr.in/Raipur?m&format=%t' | sed 's/[^0-9\-]//g')
 
           if [ -z "$TEMP" ]; then
             TEMP="23"
