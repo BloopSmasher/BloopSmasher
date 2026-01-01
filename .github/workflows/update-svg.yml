@@ -5,8 +5,9 @@ permissions:
 
 on:
   schedule:
-    - cron: '0 0 * * *'
-    - cron: '0 12 * * *'
+   - cron: '30 18 * * *'  # 12:00 AM IST
+   - cron: '30 6  * * *'  # 12:00 AM IST
+   
   workflow_dispatch:
   push:
     branches: [ main ]
