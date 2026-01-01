@@ -32,8 +32,12 @@ jobs:
           echo "Day: $DAY"
           echo "Temperature: ${TEMP}°C"
 
-          sed -i.bak "s/{{TEMPERATURE}}/$TEMP/g" canimate.svg
-          sed -i.bak "s/{{DAY}}/$DAY/g" canimate.svg
+          sed -i.bak -E \
+            "s/(It's )[0-9]+(°C here in C.G, India today\.)/\1$TEMP\2/" canimate.svg
+
+          sed -i.bak -E \
+            "s/(Have a great ).*(\.)/\1$DAY\2/" canimate.svg
+            
           rm -f canimate.svg.bak
 
       - name: Commit and Push changes
