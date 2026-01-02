@@ -1,7 +1,8 @@
-
-<a href="https://www.linkedin.com/in/harsh-jain-7866a43a2/">
-  <img src="canimate.svg" alt="Harsh waving"/>
-</a>
+<div width="400" height="380">
+  <a href="https://www.linkedin.com/in/harsh-jain-7866a43a2/">
+    <img src="canimate.svg" alt="Harsh waving"/>
+  </a>
+</div>
 
 <br/>
 
