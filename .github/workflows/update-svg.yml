@@ -1,50 +1,54 @@
 name: Update SVG with Weather
-
 permissions:
   contents: write
-
 on:
   schedule:
-   - cron: '30 18 * * *'  # 12:00 AM IST
-   - cron: '30 6  * * *'  # 12:00 AM IST
+    - cron: '0 0 * * *'   # 12 AM UTC (Night)
+    - cron: '0 12 * * *'  # 12 PM UTC (Day)
    
   workflow_dispatch:
   push:
     branches: [ main ]
-
 jobs:
   update-svg:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
-
       - name: Get Weather and Update SVG
         run: |
+          # Get IST day for greeting
           export TZ=Asia/Kolkata
           DAY=$(date '+%A')
-
-          TEMP=$(curl -s 'wttr.in/Raipur?m&format=%t' | sed 's/[^0-9\-]//g')
-
-          if [ -z "$TEMP" ]; then
-            TEMP="23"
+          
+          # Get UTC hour for day/night logic
+          export TZ=UTC
+          HOUR=$(date '+%H')
+          
+          # Determine emoji based on UTC time
+          # 0-11 UTC (12 AM to 11:59 AM UTC) = Night 🌙
+          # 12-23 UTC (12 PM to 11:59 PM UTC) = Day ⛅
+          if [ $HOUR -ge 0 ] && [ $HOUR -lt 12 ]; then
+            WEATHER_EMOJI="🌙"
+          else
+            WEATHER_EMOJI="⛅"
           fi
-
+          
           echo "Day: $DAY"
-          echo "Temperature: ${TEMP}°C"
-
+          echo "Hour (UTC): $HOUR"
+          echo "Weather Emoji: $WEATHER_EMOJI"
+          
+          
+          # Update weather emoji
           sed -i.bak -E \
-            "s/(It's )[0-9]+(°C here in C.G, India today\.)/\1$TEMP\2/" canimate.svg
-
+            "s/(it's )[⛅🌙]( Here in Chhattisgarh, India\.)/\1$WEATHER_EMOJI\2/i" canimate.svg
+          
+          # Update day
           sed -i.bak -E \
-            "s/(Have a great ).*(\.)/\1$DAY\2/" canimate.svg
+            "s/(Have a great )[A-Za-z]+(\.)/\1$DAY✌🏻\2/" canimate.svg
             
           rm -f canimate.svg.bak
-
       - name: Commit and Push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add canimate.svg
-          git commit -m "Update weather and day [skip ci]" || echo "No changes"
-          git push
