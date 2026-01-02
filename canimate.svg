@@ -9,6 +9,9 @@
   <!-- Transparent Background -->
   <rect width="400" height="380" fill="transparent" rx="8"/>
   
+  <!-- Border -->
+  <rect x="0.75" y="0.75" width="398.5" height="378.5" fill="none" stroke="#808080" stroke-width="1.5" rx="8"/>
+  
   <!-- MESSAGE 1: Hi, nice to meet you, I'm Harsh. -->
   <g id="typingDots1">
     <rect x="20" y="20" width="80" height="44" fill="#3a3a3a" rx="22" ry="22">
