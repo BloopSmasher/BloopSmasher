@@ -40,7 +40,7 @@ jobs:
           
           # Update weather emoji
           sed -i.bak -E \
-            "s/(it's )[⛅🌙]( Here in Chhattisgarh, India\.)/\1$WEATHER_EMOJI\2/i" canimate.svg
+            "s/(it's )[⛅🌙]( here in Chhattisgarh, India\.)/\1$WEATHER_EMOJI\2/i" canimate.svg
           
           # Update day
           sed -i.bak -E \
