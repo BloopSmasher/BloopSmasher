@@ -28,9 +28,9 @@ jobs:
           # 0-11 UTC (12 AM to 11:59 AM UTC) = Night 🌙
           # 12-23 UTC (12 PM to 11:59 PM UTC) = Day ⛅
           if [ $HOUR -ge 0 ] && [ $HOUR -lt 12 ]; then
-            WEATHER_EMOJI="🌙"
-          else
             WEATHER_EMOJI="⛅"
+          else
+            WEATHER_EMOJI="🌙"
           fi
           
           echo "Day: $DAY"
