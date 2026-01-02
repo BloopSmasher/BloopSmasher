@@ -9,7 +9,7 @@
 
 ---
 
-### Languages
+**Languages**
 
 ![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript)
@@ -19,7 +19,7 @@
 
 ---
 
-### Technologies
+**Technologies**
 
 ![Docker](https://img.shields.io/badge/-Docker-000?&logo=Docker)
 ![Linux](https://img.shields.io/badge/-Linux-000?&logo=Linux)
