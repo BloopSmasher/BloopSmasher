@@ -10,7 +10,7 @@
   <rect width="400" height="380" fill="transparent" rx="8"/>
   
   <!-- Border -->
-  <rect x="0.75" y="0.75" width="398.5" height="378.5" fill="none" stroke="#808080" stroke-width="1.5" rx="8"/>
+  <rect x="0.4" y="0.4" width="399.2" height="379.2" fill="none" stroke="#808080" stroke-width="0.8" rx="8"/>
   
   <!-- MESSAGE 1: Hi, nice to meet you, I'm Harsh. -->
   <g id="typingDots1">
@@ -73,7 +73,7 @@
     </rect>
     
     <text x="35" y="103" font-family="Arial, sans-serif" font-size="17" fill="#e0e0e0">
-      it's 🌙 here in Chhattisgarh, India.
+      it's ⛅ here in Chhattisgarh, India.
       <animate attributeName="opacity" values="0;0;0;0;1" keyTimes="0;0.7;0.85;0.9;1" dur="2.9s" fill="freeze"/>
     </text>
   </g>
