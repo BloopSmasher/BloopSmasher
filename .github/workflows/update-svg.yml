@@ -44,7 +44,7 @@ jobs:
           
           # Update day
           sed -i.bak -E \
-             "s/(Have a great )[A-Za-z]+!/\1$DAY! ✌🏻/" canimate.svg
+             "s/(Have a great )[A-Za-z]+!/\1$DAY!/" canimate.svg
             
           rm -f canimate.svg.bak
       - name: Commit and Push changes
