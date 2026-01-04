@@ -1,5 +1,9 @@
-<a href="https://www.linkedin.com/in/harsh-jain-7866a43a2/">
+<!-- <a href="https://www.linkedin.com/in/harsh-jain-7866a43a2/">
   <img src="canimate.svg" width="400" height="380" alt="Harsh waving"/>
+</a> -->
+
+<a href="https://www.linkedin.com/in/harsh-jain-7866a43a2/">
+  <img src="https://harsh-profile-card.vercel.app/api/card" width="400" height="380" alt="Harsh waving"/>
 </a>
 
 <br/>
