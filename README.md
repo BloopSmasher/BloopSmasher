@@ -3,7 +3,7 @@
 </a> -->
 
 <a href="https://www.linkedin.com/in/harsh-jain-7866a43a2/">
-  <img src="https://harsh-profile-card.vercel.app/api/card" width="400" height="380" alt="Harsh waving"/>
+  <img src="https://harsh-profile-card.vercel.app/api/svg" width="400" height="380" alt="Harsh waving"/>
 </a>
 
 <br/>
@@ -15,10 +15,10 @@
 ### Languages
 
 ![Python](https://img.shields.io/badge/-Python-000?&logo=Python)
-![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript)
+<!-- ![JavaScript](https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript) -->
 ![SQL](https://img.shields.io/badge/-SQL-000?&logo=MySQL)
-<!-- ![C++](https://img.shields.io/badge/-C++-000?&logo=c%2b%2b&logoColor=00599C)
-![Java](https://img.shields.io/badge/-Java-000?&logo=Java&logoColor=007396) -->
+<!--![C++](https://img.shields.io/badge/-C++-000?&logo=c%2b%2b&logoColor=00599C)  -->
+![Java](https://img.shields.io/badge/-Java-000?&logo=Java&logoColor=007396) 
 
 ---
 
