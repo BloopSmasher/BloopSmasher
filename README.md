@@ -8,7 +8,7 @@
 
 <br/>
 
-<img src="https://github-readme-stats-tawny-theta-75.vercel.app/api?username=BloopSmasher&show_icons=true&theme=transparent&title_color=404040&text_color=e0e0e0&hide_border=true&icon_color=e0e0e0" />
+<img src="https://github-readme-stats-tawny-theta-75.vercel.app/api?username=BloopSmasher&show_icons=true&theme=transparent&hide_border=true" />
 
 ---
 
