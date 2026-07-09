@@ -7,6 +7,7 @@
 </a>
 
 <br/>
+<br/>
 
 <img src="https://github-readme-stats-tawny-theta-75.vercel.app/api?username=BloopSmasher&show_icons=true&theme=transparent&hide_border=true" />
 
